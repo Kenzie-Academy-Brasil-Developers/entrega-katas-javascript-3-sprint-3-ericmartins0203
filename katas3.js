@@ -97,7 +97,7 @@ function kata8() {
     // implemente o código do kata 8 aqui
     // Exibir os números divisíveis por 3 e os números divisíveis por 7 regressivamente a partir do 100: (99, 98, 96, 93, 91, …, 14, 12, 9, 7, 6, 3)
     let meuRetorno = [99]
-    for (let i = 98; i>=0; i--){
+    for (let i = 98; i>0; i--){
         if ((i%7===0) && (i%3===0)){
             meuRetorno= meuRetorno + ", " + i
         }
