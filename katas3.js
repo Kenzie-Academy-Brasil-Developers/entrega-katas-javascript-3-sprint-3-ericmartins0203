@@ -61,7 +61,7 @@ function kata5() {
     // implemente o código do kata 5 aqui
     // Exibir os números ímpares de 25 a -25: (25, 23, 21, …, -23, -25)
     let meuRetorno = [25]
-    for (let i = 24; i>=-25; i--){
+    for (let i = 23; i>=-25; i=i-2){
         meuRetorno= meuRetorno + ", " + i
         }   
     showResults(meuRetorno)
@@ -272,7 +272,7 @@ function kataBonus2() {
     const bodyResult= document.getElementById('body');
 
     for (let i = 0; i<20; i++){
-        var blocks = document.createElement("div")
+        let blocks = document.createElement("div")
         blocks.className= "blocks"
         bodyResult.appendChild(blocks)
         blocks.style.width= 105 + 5*i +"px"
@@ -290,7 +290,7 @@ function kataBonus3() {
     const bodyResult= document.getElementById('body');
 
     for (let i = 0; i<20; i++){
-        var blocks = document.createElement("div")
+        let blocks = document.createElement("div")
         blocks.className= "blocks"
         bodyResult.appendChild(blocks)
         blocks.style.width= sampleArray[i] +"px"
@@ -308,7 +308,7 @@ function kataBonus4() {
     const bodyResult= document.getElementById('body');
 
     for (let i = 0; i<20; i++){
-        var blocks = document.createElement("div")
+        let blocks = document.createElement("div")
         blocks.className= "blocks"
         bodyResult.appendChild(blocks)
         blocks.style.width= sampleArray[i] +"px"
@@ -329,14 +329,14 @@ function kataBonus5() {
     const bodyResult= document.getElementById('body');
 
     for (let i = 0; i<20; i++){
-        var blocks = document.createElement("div")
+        let blocks = document.createElement("div")
         blocks.className= "blocks"
         bodyResult.appendChild(blocks)
         blocks.style.width= sampleArray[i] +"px"
         blocks.style.height=20 +"px"
         blocks.style.background = "gray"
         blocks.style.margin="1px"
-        if(i%2===0){
+        if(sampleArray[i]%2===0){
             blocks.style.background = "red"
         }
     }
